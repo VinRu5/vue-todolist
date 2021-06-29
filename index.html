@@ -22,15 +22,18 @@
 
             <section class="row">
                 <div class="col-12">
-                    <input type="text">
-                    <button>Aggiungi</button>
+                    <input type="text" v-model="newTask" @keyup.enter="addTask">
+                    <button @click="addTask">Aggiungi</button>
                 </div>
             </section>
 
             <main class="row">
                 <div class="col-12">
                     <ul>
-                        <li></li>
+                        <li v-for="(task, index) in toDoList">
+                            {{ task }}
+                            <i class="fas fa-window-close"></i>
+                        </li>
                     </ul>
                 </div>
             </main>
