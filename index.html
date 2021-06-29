@@ -41,12 +41,12 @@
             <main class="area row justify-content-center">
                 <ul class="col-9 tasks-list"> 
                     <li v-for="(task, index) in toDoList">
-                        <span>
+                        <div class="text-list">
                             {{ task }}
-                        </span>
-                        <span>
+                        </div>
+                        <div class="icons-list">
                             <i class="fas fa-window-close closed" @click="deleteTask(index)"></i>
-                        </span>
+                        </div>
                     </li>
                 </ul>
             </main>

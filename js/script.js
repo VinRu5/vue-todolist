@@ -9,7 +9,8 @@ new Vue(
                 'Fare la spesa',
                 'Fare il bucato'
             ],
-            newTask: ''
+            newTask: '',
+            showMenu: false
         },
         mounted() {
             this.inputFocus();
@@ -29,7 +30,8 @@ new Vue(
             inputFocus: function() {
                 const inputElement = document.getElementById('input-task');
                 inputElement.focus();
-            }
+            },
+            
         }
     }
 )
