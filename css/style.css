@@ -28,3 +28,27 @@ button.button-add {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
+/* tasks */
+.tasks-list {
+    list-style: none;
+    background-color: #f4f7f7;
+    border-radius: 12px;
+}
+
+.tasks-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    font-size: 18px;
+    margin: 0 24px;
+}
+
+.tasks-list li:first-child {
+    margin-top: 12px;
+}
+
+.tasks-list li:last-child {
+    margin-bottom: 12px;
+}

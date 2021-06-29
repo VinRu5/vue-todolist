@@ -39,14 +39,16 @@
 
             <!-- tasks -->
             <main class="area row justify-content-center">
-                <div class="col-9">
-                    <ul>
-                        <li v-for="(task, index) in toDoList">
+                <ul class="col-9 tasks-list"> 
+                    <li v-for="(task, index) in toDoList">
+                        <span>
                             {{ task }}
+                        </span>
+                        <span>
                             <i class="fas fa-window-close" @click="deleteTask(index)"></i>
-                        </li>
-                    </ul>
-                </div>
+                        </span>
+                    </li>
+                </ul>
             </main>
         </div>
 
