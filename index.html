@@ -32,7 +32,7 @@
                     <ul>
                         <li v-for="(task, index) in toDoList">
                             {{ task }}
-                            <i class="fas fa-window-close"></i>
+                            <i class="fas fa-window-close" @click="deleteTask(index)"></i>
                         </li>
                     </ul>
                 </div>

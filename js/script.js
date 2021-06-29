@@ -12,9 +12,13 @@ new Vue(
             newTask: ''
         },
         methods: {
-            addTask: function () {
+            addTask: function() {
                 this.toDoList.push(this.newTask);
                 this.newTask = '';
+            },
+            deleteTask: function(index) {
+                console.log(index);
+                this.toDoList.splice(index, 1);
             }
         }
     }
