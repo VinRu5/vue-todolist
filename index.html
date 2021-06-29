@@ -25,8 +25,15 @@
             <!-- input area -->
             <section class="area row justify-content-center">
                 <div class="col-10">
-                    <input type="text" placeholder="Cosa facciamo oggi?" v-model="newTask" @keyup.enter="addTask">
-                    <button class="button-add" @click="addTask">Aggiungi</button>
+                    <div class="input-area row align-items-center">
+                        <div class="col-10">
+                            <input id="input-task" type="text" placeholder="Cosa facciamo oggi?" v-model="newTask" @keyup.enter="addTask">
+                        </div>
+                        <div class="col-2">
+                            <button class="button-add" @click="addTask">Aggiungi</button>
+                            
+                        </div>
+                    </div>
                 </div>
             </section>
 
