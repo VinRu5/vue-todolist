@@ -22,6 +22,10 @@ button.button-add {
     border: none;
 }
 
+#input-task:focus {
+    border: none;
+}
+
 .input-area {
     border: 1px solid #333;
     border-radius: 36px;
@@ -51,4 +55,9 @@ button.button-add {
 
 .tasks-list li:last-child {
     margin-bottom: 12px;
+}
+
+.tasks-list li .closed {
+    color: #e12120;
+    cursor: pointer;
 }

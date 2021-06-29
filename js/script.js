@@ -11,13 +11,24 @@ new Vue(
             ],
             newTask: ''
         },
+        mounted() {
+            this.inputFocus();
+        },
         methods: {
             addTask: function() {
-                this.toDoList.push(this.newTask);
-                this.newTask = '';
+                if (this.newTask !== '') {
+                    this.toDoList.push(this.newTask);
+                    this.newTask = '';
+                }
+                this.inputFocus();
             },
             deleteTask: function(index) {
                 this.toDoList.splice(index, 1);
+                this.inputFocus();
+            },
+            inputFocus: function() {
+                const inputElement = document.getElementById('input-task');
+                inputElement.focus();
             }
         }
     }
