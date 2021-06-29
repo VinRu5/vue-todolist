@@ -17,7 +17,6 @@ new Vue(
                 this.newTask = '';
             },
             deleteTask: function(index) {
-                console.log(index);
                 this.toDoList.splice(index, 1);
             }
         }

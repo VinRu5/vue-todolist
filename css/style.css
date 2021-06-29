@@ -1,3 +1,16 @@
+.area {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 .img-container img {
     width: 100%;
+}
+
+button.button-add {
+    border: 1px solid #38acec;
+    padding: 6px 12px;
+    border-radius: 24px;
+    background-color: #38acec;
+    color: #fff;
 }

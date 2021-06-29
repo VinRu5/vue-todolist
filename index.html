@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,21 +14,25 @@
     <div id="app">
         
         <div class="container">
-            <header class="row">
-                <div class="img-container col-12">
+
+            <!-- logo -->
+            <header class="area row justify-content-center">
+                <div class="img-container col-8">
                     <img src="./img/logo.png" alt="">
                 </div>
             </header>
 
-            <section class="row">
-                <div class="col-12">
-                    <input type="text" v-model="newTask" @keyup.enter="addTask">
-                    <button @click="addTask">Aggiungi</button>
+            <!-- input area -->
+            <section class="area row justify-content-center">
+                <div class="col-10">
+                    <input type="text" placeholder="Cosa facciamo oggi?" v-model="newTask" @keyup.enter="addTask">
+                    <button class="button-add" @click="addTask">Aggiungi</button>
                 </div>
             </section>
 
-            <main class="row">
-                <div class="col-12">
+            <!-- tasks -->
+            <main class="area row justify-content-center">
+                <div class="col-9">
                     <ul>
                         <li v-for="(task, index) in toDoList">
                             {{ task }}
